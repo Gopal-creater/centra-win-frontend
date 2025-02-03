@@ -21,19 +21,21 @@ const OrderIntakeForm = () => {
     try {
       // Generate base64PDF
       const pdf = await generatePDF(values);
-      const base64content = await pdf.split("base64,")[1];
+      const base64content =  pdf.split("base64,")[1];
 
       // Send email with PDF attachment
       const res = await sendEmail(base64content, values);
 
       // Show success message
       if (res) message.success("Order submitted successfully!");
+      
+      //Reset form
+      form.resetFields();
     } catch (error) {
       console.error("Error submitting form:", error);
       message.error("Failed to submit order. Please try again.");
     } finally {
       setState({ ...state, isFormSubmitting: false });
-      form.resetFields();
     }
   };
 
