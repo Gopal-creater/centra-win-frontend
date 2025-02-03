@@ -1,0 +1,4 @@
+.dragger {
+  @apply flex flex-col justify-center items-center h-[240px];
+  width: 100% !important;
+}

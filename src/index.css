@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Our app theme */
+@theme {
+  --color-primary: #3e5eb1;
+  --color-grey: #edeff5;
+}
+
+/* Removing default margin and padding from the body */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Apply grey background to whole app */
+body {
+  @apply bg-grey p-2;
+}
+
+/* Custom Css Ant Form---------------------------- */
+.custom-form {
+  @apply p-0;
+}
+
+.custom-form .ant-form-item:not(:last-child) {
+  margin-bottom: 1rem; /* Apply margin-bottom to all except the last item */ /* Optional padding rule */
+}
+
+.custom-form .ant-form-item:last-child {
+  margin-bottom: 0px !important;
+}
+
+/* Target the label in the form item */
+.custom-form .ant-form-item-label > label {
+  @apply w-40 leading-[14px] text-[14px];
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}

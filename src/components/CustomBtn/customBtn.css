@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Base button styling */
+.button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.primary:hover {
+  background-color: #2980b9;
+}
+
+.secondary {
+  background-color: var(--color-grey);
+  border: none;
+}
+
+.secondary:hover {
+  background-color: var(--color-grey);
+}
+
+.small {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.medium {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.large {
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+.spinner {
+  color: white;
+}

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.header {
+  @apply p-2 rounded-md text-white;
+  background-color: var(--color-primary);
+}

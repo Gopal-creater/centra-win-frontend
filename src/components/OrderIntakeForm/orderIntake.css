@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.formBtns {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px; /* Adds space between buttons */
+}
