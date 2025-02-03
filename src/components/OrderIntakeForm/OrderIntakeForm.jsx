@@ -33,7 +33,7 @@ const OrderIntakeForm = () => {
       form.resetFields();
     } catch (error) {
       console.error("Error submitting form:", error);
-      message.error("Failed to submit order. Please try again.");
+      message.error(`Failed to submit order,${error?.message}`);
     } finally {
       setState({ ...state, isFormSubmitting: false });
     }
